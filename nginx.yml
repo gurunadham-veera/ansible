@@ -1,6 +1,6 @@
 ---
 - name: Install nginx on Ubuntu
-  hosts: webservers
+  hosts: all
   become: yes
   gather_facts: no
 
