@@ -3,5 +3,12 @@
   hosts: all
   gather_facts: no
 
-  tasks:
-   - package: "name=dialog state=present"
+ tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: present
