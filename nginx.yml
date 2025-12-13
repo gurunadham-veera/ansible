@@ -1,8 +1,6 @@
 ---
 - name: Install and start Nginx on Ubuntu
   hosts: all
-  gather_facts: no
-  become: yes
 
   tasks:
     - name: Install Nginx
