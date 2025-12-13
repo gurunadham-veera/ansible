@@ -1,9 +1,4 @@
-- name: Install nginx on Ubuntu
-  hosts: all
-
+- host: all 
   tasks:
+  - package: "name=httpd state=started"
 
-    - name: Install nginx
-      apt:
-        name: nginx
-        state: present
